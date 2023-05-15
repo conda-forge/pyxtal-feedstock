@@ -8,18 +8,20 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxtal-{{ version }}.tar.gz
   sha256: da6de3798bbed93047b2e8a30c05b36576219391a14225a3645e2ad5c82ee9fc
+  patches:
+    - python311.patch
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
   host:
-    - python <=3.11,>=3.7
+    - python >=3.7
     - pip
   run:
-    - python <=3.11,>=3.7
+    - python >=3.7
     - spglib >=1.10.4
     - pymatgen >=2022.0.12
     - pandas >=0.24.2
