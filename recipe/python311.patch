@@ -1,0 +1,21 @@
+From 1680b54079feeb84f4b637a765afcc140a3f977e Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Mon, 15 May 2023 17:06:40 -0600
+Subject: [PATCH] python 3.11
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 9d98c3e..19bf7ec 100755
+--- a/setup.py
++++ b/setup.py
+@@ -55,6 +55,6 @@
+         'pyshtools==4.10',
+         #"openbabel>=3.0.0",
+     ],
+-    python_requires=">=3.7, <=3.11", #add the restriction for now issue #189
++    python_requires=">=3.7",
+     license="MIT",
+ )
