@@ -1,0 +1,22 @@
+From c84e90c4209258941a1f351f3de84fb9d9b7331c Mon Sep 17 00:00:00 2001
+From: Qiang Zhu <alecfans@gmail.com>
+Date: Fri, 7 Jul 2023 17:51:28 -0700
+Subject: [PATCH] check if pyshtools is compatible #222
+
+---
+ setup.py         | 2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index 9d98c3e..bf4f089 100755
+--- a/setup.py
++++ b/setup.py
+@@ -52,7 +52,7 @@
+         'numba>=0.55.2', #now supports numpy 1.22
+         'scipy>=1.7.3',
+         'importlib_metadata>=1.4',
+-        'pyshtools==4.10',
++        'pyshtools>=4.10.3',
+         #"openbabel>=3.0.0",
+     ],
+     python_requires=">=3.7, <=3.11", #add the restriction for now issue #189
