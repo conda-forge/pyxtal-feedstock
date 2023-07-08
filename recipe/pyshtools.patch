@@ -4,20 +4,9 @@ Date: Fri, 7 Jul 2023 17:51:28 -0700
 Subject: [PATCH] check if pyshtools is compatible #222
 
 ---
- requirements.txt | 2 +-
  setup.py         | 2 +-
- 2 files changed, 2 insertions(+), 2 deletions(-)
+ 1 files changed, 1 insertions(+), 1 deletions(-)
 
-diff --git a/requirements.txt b/requirements.txt
-index b8e2df1..40634c0 100644
---- a/requirements.txt
-+++ b/requirements.txt
-@@ -7,4 +7,4 @@ scipy>=1.7.3
- importlib_metadata>=1.4
- ase>=3.18.0
- numba>=0.55.2
--pyshtools==4.10
-+pyshtools>=4.10.3
 diff --git a/setup.py b/setup.py
 index 9d98c3e..bf4f089 100755
 --- a/setup.py
