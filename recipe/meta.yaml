@@ -1,5 +1,5 @@
 {% set name = "pyxtal" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxtal-{{ version }}.tar.gz
-  sha256: 835312a121446f6ecd5f7fdff4682cf0e14eea754f639e80ca727406fdec1b5a
+  sha256: 7d0a9db72b05c158944d186c11e920065751ee728af436171cadccdedb645613
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -21,7 +21,7 @@ requirements:
   run:
     - python <=3.12,>=3.7
     - spglib >=1.10.4
-    - pymatgen >=2023.10.3
+    - pymatgen >=2024.3.1
     - pandas >=2.0.2
     - networkx >=2.3
     - ase >=3.18.0
