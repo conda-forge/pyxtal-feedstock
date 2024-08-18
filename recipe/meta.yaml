@@ -1,5 +1,5 @@
 {% set name = "pyxtal" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxtal-{{ version }}.tar.gz
-  sha256: a422272d81a966e793361cad6ea0b3d5df0f1b3f1f3f3ba106f021152e339811
+  sha256: 9bf98431bef3733b01f818f8a6007630a02cf667644b49511eea379868e5f130
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
