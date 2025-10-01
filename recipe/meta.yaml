@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }},<3.13a0
+    - python >={{ python_min }}
     - spglib >=2.5.0
     - pymatgen >=2024.3.1
     - pandas >=2.0.2
